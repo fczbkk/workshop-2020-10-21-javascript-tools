@@ -21,6 +21,7 @@
   },
   "scripts": {
     "prebuild": "npm run cleanup",
+    "postbuild": "echo 'DONE'",
     "build": "npm run build-legacy && npm run build-modern",
     "build-generic": "babel ./src",
     "build-legacy": "npm run build-generic -- --out-dir ./build/legacy --config-file ./configs/babel.json",
