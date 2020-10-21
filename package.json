@@ -16,6 +16,8 @@
     "lodash": "^4.17.20"
   },
   "devDependencies": {
+    "documentation": "^8.1.2",
+    "jsdoc": "^3.5.5",
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
@@ -24,6 +26,8 @@
     "webpack-cli": "^4.1.0"
   },
   "scripts": {
+    "doc": "jsdoc -c ./jsdoc.config.json",
+    "doc:readme": "documentation readme ./src/index.js -s 'Documentation'",
     "prebuild": "npm run cleanup",
     "postbuild": "echo 'DONE'",
     "build": "webpack --config ./configs/webpack.js",
