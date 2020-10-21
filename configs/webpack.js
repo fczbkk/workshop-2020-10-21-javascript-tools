@@ -1,10 +1,18 @@
 const path = require('path')
 
 module.exports = {
-  mode: 'production',
-  entry: path.resolve(__dirname, '../src/index.js'),
+  mode: 'development',
+  entry: {
+    'first': path.resolve(__dirname, '../src/index.js'),
+    'second': path.resolve(__dirname, '../src/index2.js')
+  },
   output: {
     path: path.resolve(__dirname, '../build'),
-    filename: 'bundle.js'
+    filename: '[name].js'
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
   }
 }

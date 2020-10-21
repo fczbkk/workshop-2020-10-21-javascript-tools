@@ -1,4 +1,5 @@
 import { doSomething } from './utilities.js'
 
-console.log('hello world')
+console.log('toto je druhy entry point')
+
 doSomething()
