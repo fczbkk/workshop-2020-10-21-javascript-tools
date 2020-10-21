@@ -11,5 +11,11 @@
   "bugs": {
     "url": "https://github.com/fczbkk/workshop-2020-10-21-javascript-tools/issues"
   },
-  "homepage": "https://github.com/fczbkk/workshop-2020-10-21-javascript-tools#readme"
+  "homepage": "https://github.com/fczbkk/workshop-2020-10-21-javascript-tools#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1"
+  }
 }
