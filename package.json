@@ -1,4 +1,15 @@
 {
   "name": "universal-tester",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "description": "Sample project for workshop.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fczbkk/workshop-2020-10-21-javascript-tools.git"
+  },
+  "author": "Riki Fridrich <riki@fczbkk.com> (http://fczbkk.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fczbkk/workshop-2020-10-21-javascript-tools/issues"
+  },
+  "homepage": "https://github.com/fczbkk/workshop-2020-10-21-javascript-tools#readme"
 }
