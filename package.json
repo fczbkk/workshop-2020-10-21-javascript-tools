@@ -12,20 +12,21 @@
     "url": "https://github.com/fczbkk/workshop-2020-10-21-javascript-tools/issues"
   },
   "homepage": "https://github.com/fczbkk/workshop-2020-10-21-javascript-tools#readme",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.1.0"
   },
   "scripts": {
     "prebuild": "npm run cleanup",
     "postbuild": "echo 'DONE'",
-    "build": "npm run build-legacy && npm run build-modern",
-    "build-generic": "babel ./src",
-    "build-legacy": "npm run build-generic -- --out-dir ./build/legacy --config-file ./configs/babel.json",
-    "build-modern": "npm run build-generic -- --out-dir ./build/modern --config-file ./configs/babel-modern.json",
+    "build": "webpack --config ./configs/webpack.js",
     "cleanup": "rimraf ./build"
   }
 }
