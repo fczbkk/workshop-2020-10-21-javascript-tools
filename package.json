@@ -16,6 +16,8 @@
     "lodash": "^4.17.20"
   },
   "devDependencies": {
+    "conventional-changelog-angular": "^5.0.2",
+    "conventional-changelog-cli": "^2.0.11",
     "documentation": "^8.1.2",
     "jsdoc": "^3.5.5",
     "@babel/cli": "^7.12.1",
@@ -31,6 +33,7 @@
     "prebuild": "npm run cleanup",
     "postbuild": "echo 'DONE'",
     "build": "webpack --config ./configs/webpack.js",
-    "cleanup": "rimraf ./build"
+    "cleanup": "rimraf ./build",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   }
 }
