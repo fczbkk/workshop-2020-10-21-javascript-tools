@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/fczbkk/workshop-2020-10-21-javascript-tools#readme",
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "conventional-changelog-angular": "^5.0.2",
